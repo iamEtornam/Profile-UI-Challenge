@@ -15,7 +15,7 @@ This project is an implementation of a Design i saw on Twitter
 ## Art
 
 
-<img align="left" src="https://raw.githubusercontent.com/RegNex/Profile-UI-Challenge/master/screenshots/original.jpg" height="400"/>
+<img align="left" src="https://raw.githubusercontent.com/RegNex/Profile-UI-Challenge/master/screenshots/original.JPG" height="400"/>
 
 
 ## Getting Started
