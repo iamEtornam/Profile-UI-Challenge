@@ -7,7 +7,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'UI',
-      theme: ThemeData(brightness: Brightness.dark),
+      theme: ThemeData(
+          brightness: Brightness.dark, appBarTheme: AppBarTheme(elevation: 0)),
       home: ProfilePage(),
     );
   }
