@@ -70,8 +70,12 @@ class ProfilePage extends StatelessWidget {
                 ],
               ),
             ),
-            SizedBox(
+            Container(
               height: 70,
+              width: MediaQuery
+                  .of(context)
+                  .size
+                  .width,
               child: Padding(
                 padding: const EdgeInsets.all(16.0),
                 child: Row(
@@ -258,8 +262,24 @@ class ProfilePage extends StatelessWidget {
                                 ],
                               ),
                             ),
-                            Icon(Icons.directions_transit),
-                            Icon(Icons.directions_bike),
+                            Container(
+                              padding:
+                              const EdgeInsets.fromLTRB(10, 15, 10, 10),
+                              width: MediaQuery
+                                  .of(context)
+                                  .size
+                                  .width,
+                              height: 200,
+                            ),
+                            Container(
+                              padding:
+                              const EdgeInsets.fromLTRB(10, 15, 10, 10),
+                              width: MediaQuery
+                                  .of(context)
+                                  .size
+                                  .width,
+                              height: 200,
+                            ),
                           ],
                         ),
                       ),
