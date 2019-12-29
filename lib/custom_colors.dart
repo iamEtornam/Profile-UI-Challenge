@@ -12,4 +12,4 @@ var color = [
   Color.fromRGBO(211, 18, 97, 1),
 ];
 
-//164,18,82
+var tabIndicatorColor = Color.fromRGBO(164, 18, 82, 1);
