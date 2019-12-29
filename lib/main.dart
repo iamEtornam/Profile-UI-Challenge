@@ -10,7 +10,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'UI',
       theme: ThemeData(
-          brightness: Brightness.dark, scaffoldBackgroundColor: Colors.white),
+          brightness: Brightness.light, scaffoldBackgroundColor: Colors.white),
       home: ProfilePage(),
     );
   }
@@ -195,8 +195,10 @@ class ProfilePage extends StatelessWidget {
                         children: <Widget>[
                           Material(
                             borderRadius: BorderRadius.circular(90),
-                            child: FlutterLogo(
-                              size: 60,
+                            color: Colors.green,
+                            child: SizedBox(
+                              height: 60,
+                              width: 60,
                             ),
                           ),
                           Expanded(
