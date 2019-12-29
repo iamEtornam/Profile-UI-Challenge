@@ -20,15 +20,24 @@ class ProfilePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: PreferredSize(
-        child: profileHeaderWidget(context),
-        preferredSize: Size.fromHeight(200),
-      ),
-      body: ListView(
-        children: <Widget>[
-          profilePictureWidget(context),
-          profileBodyWidget(context),
-        ],
+      body: SingleChildScrollView(
+        child: Column(
+          children: <Widget>[
+            Wrap(
+              children: <Widget>[
+                Align(
+                    alignment: Alignment.topCenter,
+                    child: profileHeaderWidget(context)),
+                Align(
+                    alignment: Alignment.center,
+                    child: profilePictureWidget(context)),
+                Align(
+                    alignment: Alignment.bottomCenter,
+                    child: profileBodyWidget(context)),
+              ],
+            ),
+          ],
+        ),
       ),
     );
   }
@@ -36,10 +45,7 @@ class ProfilePage extends StatelessWidget {
   Widget profileHeaderWidget(BuildContext context) {
     return Container(
       height: 200,
-      width: MediaQuery
-          .of(context)
-          .size
-          .width,
+      width: MediaQuery.of(context).size.width,
       padding: const EdgeInsets.fromLTRB(16, 36, 16, 10),
       decoration: BoxDecoration(
           borderRadius: BorderRadius.only(
@@ -85,14 +91,8 @@ class ProfilePage extends StatelessWidget {
 
   Widget profileBodyWidget(BuildContext context) {
     return Container(
-      width: MediaQuery
-          .of(context)
-          .size
-          .width,
-      height: MediaQuery
-          .of(context)
-          .size
-          .height,
+      width: MediaQuery.of(context).size.width,
+      height: MediaQuery.of(context).size.height,
       padding: const EdgeInsets.fromLTRB(16, 36, 16, 10),
       decoration: BoxDecoration(
           borderRadius: BorderRadius.only(
@@ -124,10 +124,7 @@ class ProfilePage extends StatelessWidget {
           ),
           Container(
             padding: const EdgeInsets.fromLTRB(10, 15, 10, 10),
-            width: MediaQuery
-                .of(context)
-                .size
-                .width,
+            width: MediaQuery.of(context).size.width,
             decoration: BoxDecoration(
                 color: Colors.white, borderRadius: BorderRadius.circular(15)),
             child: Column(
@@ -153,10 +150,7 @@ class ProfilePage extends StatelessWidget {
           ),
           Container(
             padding: const EdgeInsets.fromLTRB(10, 15, 10, 10),
-            width: MediaQuery
-                .of(context)
-                .size
-                .width,
+            width: MediaQuery.of(context).size.width,
             height: 200,
             decoration: BoxDecoration(
                 color: Colors.white, borderRadius: BorderRadius.circular(15)),
@@ -205,7 +199,7 @@ class ProfilePage extends StatelessWidget {
                             child: ListTile(
                               title: Row(
                                 mainAxisAlignment:
-                                MainAxisAlignment.spaceBetween,
+                                    MainAxisAlignment.spaceBetween,
                                 children: <Widget>[
                                   Text('ATATA RAHEEMAT',
                                       style: TextStyle(
@@ -229,18 +223,12 @@ class ProfilePage extends StatelessWidget {
                     ),
                     Container(
                       padding: const EdgeInsets.fromLTRB(10, 15, 10, 10),
-                      width: MediaQuery
-                          .of(context)
-                          .size
-                          .width,
+                      width: MediaQuery.of(context).size.width,
                       height: 200,
                     ),
                     Container(
                       padding: const EdgeInsets.fromLTRB(10, 15, 10, 10),
-                      width: MediaQuery
-                          .of(context)
-                          .size
-                          .width,
+                      width: MediaQuery.of(context).size.width,
                       height: 200,
                     ),
                   ],
@@ -256,63 +244,55 @@ class ProfilePage extends StatelessWidget {
   Widget profilePictureWidget(BuildContext context) {
     return Stack(
       children: <Widget>[
-        Center(
-          child: Container(
-            height: 70,
-            width: MediaQuery
-                .of(context)
-                .size
-                .width,
-            color: Colors.white,
-            child: Padding(
-              padding: const EdgeInsets.all(16.0),
-              child: Center(
-                child: Row(
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: <Widget>[
-                    Column(
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: <Widget>[
-                        Text('12k',
-                            style: TextStyle(
-                              color: Colors.black,
-                            )),
-                        Text('FOLLOWING',
-                            style: TextStyle(color: Colors.black)),
-                      ],
-                    ),
-                    Column(
-                      crossAxisAlignment: CrossAxisAlignment.center,
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: <Widget>[
-                        Text('32k',
-                            style: TextStyle(
-                              color: Colors.black,
-                            )),
-                        Text('FOLLOWERS',
-                            style: TextStyle(color: Colors.black)),
-                      ],
-                    ),
-                  ],
-                ),
+        Container(
+          height: 70,
+          width: MediaQuery.of(context).size.width,
+          color: Colors.white,
+          child: Padding(
+            padding: const EdgeInsets.all(16.0),
+            child: Center(
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: <Widget>[
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: <Widget>[
+                      Text('12k',
+                          style: TextStyle(
+                            color: Colors.black,
+                          )),
+                      Text('FOLLOWING', style: TextStyle(color: Colors.black)),
+                    ],
+                  ),
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: <Widget>[
+                      Text('32k',
+                          style: TextStyle(
+                            color: Colors.black,
+                          )),
+                      Text('FOLLOWERS', style: TextStyle(color: Colors.black)),
+                    ],
+                  ),
+                ],
               ),
             ),
           ),
         ),
-        Positioned(
-          child: Center(
-            child: Container(
-              width: 180,
-              height: 180,
-              decoration: BoxDecoration(
-                  color: Colors.green,
-                  borderRadius: BorderRadius.circular(90),
-                  border: Border.all(width: 10, color: Colors.white)),
-            ),
-          ),
-        ),
+//        Align(
+//          alignment: Alignment.center,
+//          child: Container(
+//            width: 180,
+//            height: 180,
+//            decoration: BoxDecoration(
+//                color: Colors.green,
+//                borderRadius: BorderRadius.circular(90),
+//                border: Border.all(width: 10, color: Colors.white)),
+//          ),
+//        ),
       ],
     );
   }
