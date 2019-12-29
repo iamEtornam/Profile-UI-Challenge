@@ -101,142 +101,151 @@ class ProfilePage extends StatelessWidget {
               colors: color,
               begin: Alignment.centerLeft,
               end: Alignment.centerRight)),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.center,
-        children: <Widget>[
-          Text(
-            'ATATA RAHEEMAT MOJOSOLA',
-            style: TextStyle(
-                color: Colors.white, fontWeight: FontWeight.w500, fontSize: 20),
-          ),
-          Text(
-            'PRODUCT DESIGNER',
-            style: TextStyle(
-                color: Colors.black, fontWeight: FontWeight.w500, fontSize: 20),
-          ),
-          Text(
-            'JOINED 15TH DECEMBER 2019',
-            style: TextStyle(
-                color: Colors.grey, fontWeight: FontWeight.w500, fontSize: 16),
-          ),
-          SizedBox(
-            height: 10,
-          ),
-          Container(
-            padding: const EdgeInsets.fromLTRB(10, 15, 10, 10),
-            width: MediaQuery.of(context).size.width,
-            decoration: BoxDecoration(
-                color: Colors.white, borderRadius: BorderRadius.circular(15)),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: <Widget>[
-                Text(
-                  'BIO',
-                  style: TextStyle(fontSize: 18, color: Colors.grey),
-                ),
-                SizedBox(
-                  height: 6,
-                ),
-                Text(
-                  '''Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc malesuada sapien massa, vel porta justo elementum non. Nullam gravida orci ac mollis aliquam. Sed aliquam non libero eget pretium. Nulla facilisi. Quisque tincidunt elit id dictum lobortis. Fusce pretium lacus in ultrices scelerisque.''',
-                  softWrap: true,
-                  style: TextStyle(fontSize: 17, color: Colors.black),
-                )
-              ],
+      child: Padding(
+        padding: const EdgeInsets.only(top: 40.0),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: <Widget>[
+            Text(
+              'ATATA RAHEEMAT MOJOSOLA',
+              style: TextStyle(
+                  color: Colors.white,
+                  fontWeight: FontWeight.w500,
+                  fontSize: 20),
             ),
-          ),
-          SizedBox(
-            height: 15,
-          ),
-          Container(
-            padding: const EdgeInsets.fromLTRB(10, 15, 10, 10),
-            width: MediaQuery.of(context).size.width,
-            height: 200,
-            decoration: BoxDecoration(
-                color: Colors.white, borderRadius: BorderRadius.circular(15)),
-            child: DefaultTabController(
-              length: 3,
-              child: Scaffold(
-                appBar: PreferredSize(
-                  preferredSize: Size.fromHeight(kToolbarHeight),
-                  child: TabBar(
-                    indicatorColor: tabIndicatorColor,
-                    unselectedLabelColor: Colors.green,
-                    tabs: [
-                      Tab(
-                        child: Text(
-                          '115 POSTS',
-                          style: TextStyle(color: Colors.black),
-                        ),
-                      ),
-                      Tab(
-                          child: Text('LIKES',
-                              style: TextStyle(color: Colors.black))),
-                      Tab(
-                        child: Text(
-                          '65 MEDIA',
-                          style: TextStyle(color: Colors.black),
-                        ),
-                      )
-                    ],
+            Text(
+              'PRODUCT DESIGNER',
+              style: TextStyle(
+                  color: Colors.black,
+                  fontWeight: FontWeight.w500,
+                  fontSize: 20),
+            ),
+            Text(
+              'JOINED 15TH DECEMBER 2019',
+              style: TextStyle(
+                  color: Colors.grey,
+                  fontWeight: FontWeight.w500,
+                  fontSize: 16),
+            ),
+            SizedBox(
+              height: 10,
+            ),
+            Container(
+              padding: const EdgeInsets.fromLTRB(10, 15, 10, 10),
+              width: MediaQuery.of(context).size.width,
+              decoration: BoxDecoration(
+                  color: Colors.white, borderRadius: BorderRadius.circular(15)),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: <Widget>[
+                  Text(
+                    'BIO',
+                    style: TextStyle(fontSize: 18, color: Colors.grey),
                   ),
-                ),
-                body: TabBarView(
-                  children: [
-                    Padding(
-                      padding: const EdgeInsets.only(top: 10.0),
-                      child: Row(
-                        children: <Widget>[
-                          Material(
-                            borderRadius: BorderRadius.circular(90),
-                            color: Colors.green,
-                            child: SizedBox(
-                              height: 60,
-                              width: 60,
-                            ),
+                  SizedBox(
+                    height: 6,
+                  ),
+                  Text(
+                    '''Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc malesuada sapien massa, vel porta justo elementum non. Nullam gravida orci ac mollis aliquam. Sed aliquam non libero eget pretium. Nulla facilisi. Quisque tincidunt elit id dictum lobortis. Fusce pretium lacus in ultrices scelerisque.''',
+                    softWrap: true,
+                    style: TextStyle(fontSize: 17, color: Colors.black),
+                  )
+                ],
+              ),
+            ),
+            SizedBox(
+              height: 15,
+            ),
+            Container(
+              padding: const EdgeInsets.fromLTRB(10, 15, 10, 10),
+              width: MediaQuery.of(context).size.width,
+              height: 200,
+              decoration: BoxDecoration(
+                  color: Colors.white, borderRadius: BorderRadius.circular(15)),
+              child: DefaultTabController(
+                length: 3,
+                child: Scaffold(
+                  appBar: PreferredSize(
+                    preferredSize: Size.fromHeight(kToolbarHeight),
+                    child: TabBar(
+                      indicatorColor: tabIndicatorColor,
+                      unselectedLabelColor: Colors.green,
+                      tabs: [
+                        Tab(
+                          child: Text(
+                            '115 POSTS',
+                            style: TextStyle(color: Colors.black),
                           ),
-                          Expanded(
-                            child: ListTile(
-                              title: Row(
-                                mainAxisAlignment:
-                                    MainAxisAlignment.spaceBetween,
-                                children: <Widget>[
-                                  Text('ATATA RAHEEMAT',
-                                      style: TextStyle(
-                                          color: Colors.black, fontSize: 18)),
-                                  Text('22/06/2019',
-                                      style: TextStyle(
-                                          color: Colors.black, fontSize: 14))
-                                ],
+                        ),
+                        Tab(
+                            child: Text('LIKES',
+                                style: TextStyle(color: Colors.black))),
+                        Tab(
+                          child: Text(
+                            '65 MEDIA',
+                            style: TextStyle(color: Colors.black),
+                          ),
+                        )
+                      ],
+                    ),
+                  ),
+                  body: TabBarView(
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.only(top: 10.0),
+                        child: Row(
+                          children: <Widget>[
+                            Material(
+                              borderRadius: BorderRadius.circular(90),
+                              color: Colors.green,
+                              child: SizedBox(
+                                height: 60,
+                                width: 60,
                               ),
-                              subtitle: Padding(
-                                padding: const EdgeInsets.only(top: 8.0),
-                                child: Text(
-                                  'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc malesuada sapien massa, vel porta justo elementum non.',
-                                  style: TextStyle(color: Colors.black),
+                            ),
+                            Expanded(
+                              child: ListTile(
+                                title: Row(
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceBetween,
+                                  children: <Widget>[
+                                    Text('ATATA RAHEEMAT',
+                                        style: TextStyle(
+                                            color: Colors.black, fontSize: 18)),
+                                    Text('22/06/2019',
+                                        style: TextStyle(
+                                            color: Colors.black, fontSize: 14))
+                                  ],
+                                ),
+                                subtitle: Padding(
+                                  padding: const EdgeInsets.only(top: 8.0),
+                                  child: Text(
+                                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc malesuada sapien massa, vel porta justo elementum non.',
+                                    style: TextStyle(color: Colors.black),
+                                  ),
                                 ),
                               ),
                             ),
-                          ),
-                        ],
+                          ],
+                        ),
                       ),
-                    ),
-                    Container(
-                      padding: const EdgeInsets.fromLTRB(10, 15, 10, 10),
-                      width: MediaQuery.of(context).size.width,
-                      height: 200,
-                    ),
-                    Container(
-                      padding: const EdgeInsets.fromLTRB(10, 15, 10, 10),
-                      width: MediaQuery.of(context).size.width,
-                      height: 200,
-                    ),
-                  ],
+                      Container(
+                        padding: const EdgeInsets.fromLTRB(10, 15, 10, 10),
+                        width: MediaQuery.of(context).size.width,
+                        height: 200,
+                      ),
+                      Container(
+                        padding: const EdgeInsets.fromLTRB(10, 15, 10, 10),
+                        width: MediaQuery.of(context).size.width,
+                        height: 200,
+                      ),
+                    ],
+                  ),
                 ),
               ),
-            ),
-          )
-        ],
+            )
+          ],
+        ),
       ),
     );
   }
