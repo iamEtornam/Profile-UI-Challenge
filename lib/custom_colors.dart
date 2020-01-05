@@ -13,3 +13,6 @@ var color = [
 ];
 
 var tabIndicatorColor = Color.fromRGBO(164, 18, 82, 1);
+var chatScaffoldBg = Color.fromRGBO(19, 21, 25, 1);
+var chatAccentColor = Color.fromRGBO(47, 71, 250, 1);
+var searchBgColor = Color.fromRGBO(21, 21, 23, 1);
