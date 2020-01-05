@@ -16,6 +16,9 @@ This project is an implementation of a Design i saw on Twitter
 
 
 <img align="center" src="https://raw.githubusercontent.com/RegNex/Profile-UI-Challenge/master/screenshots/original.JPG" height="400"/>
+<img align="center" src="https://raw.githubusercontent.com/RegNex/Profile-UI-Challenge/master/screenshots/profile.png" height="400"/>
+<img align="center" src="https://raw.githubusercontent.com/RegNex/Profile-UI-Challenge/master/screenshots/chat_original1.jpeg" height="400"/>
+<img align="center" src="https://raw.githubusercontent.com/RegNex/Profile-UI-Challenge/master/screenshots/chat_original2.jpeg" height="400"/>
 
 
 ## Getting Started
