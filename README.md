@@ -123,7 +123,7 @@ What things you need to run the app
 
 **A_Gal_That_Loves_To_Code**
 
-- [**Mockup designer**](https://www.twitter.com/atata_reheemat)
+- [**Mockup designer Twitter handle**](https://www.twitter.com/atata_reheemat)
 
 ## License
 
