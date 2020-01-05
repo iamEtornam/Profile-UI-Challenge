@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import 'custom_colors.dart';
+import 'single_chat_page.dart';
 
 class ChatListPage extends StatefulWidget {
   @override
@@ -76,31 +77,52 @@ class _ChatListPageState extends State<ChatListPage> {
           },
           itemCount: chatData.length,
           itemBuilder: (BuildContext context, int index) {
-            return buildChatListTile(chatData[index][0], chatData[index][1],
-                chatData[index][2], chatData[index][3], chatData[index][4]);
+            return buildChatListTile(
+                chatData[index][0],
+                chatData[index][1],
+                chatData[index][2],
+                chatData[index][3],
+                chatData[index][4],
+                chatData[index]);
           }),
-          bottomNavigationBar: BottomNavigationBar(
-            backgroundColor: searchBgColor,
-            currentIndex: 0,
-            selectedItemColor: chatAccentColor,
-            unselectedItemColor: Colors.grey,
-            showSelectedLabels: true,
-            showUnselectedLabels: true,
-            items: [
+      bottomNavigationBar: BottomNavigationBar(
+          backgroundColor: searchBgColor,
+          currentIndex: 0,
+          selectedItemColor: chatAccentColor,
+          unselectedItemColor: Colors.grey,
+          showSelectedLabels: true,
+          showUnselectedLabels: true,
+          items: [
             BottomNavigationBarItem(
-              icon: Icon(Icons.comment),
-              title: Text('Chats'),
-              backgroundColor: searchBgColor),
-            BottomNavigationBarItem(icon: Icon(Icons.account_circle),title: Text('Contacts'),backgroundColor: searchBgColor),
-            BottomNavigationBarItem(icon: Icon(Icons.call),title: Text('Calls'),backgroundColor: searchBgColor),
-            BottomNavigationBarItem(icon: Icon(Icons.settings),title: Text('Settings'),backgroundColor: searchBgColor),
+                icon: Icon(Icons.comment),
+                title: Text('Chats'),
+                backgroundColor: searchBgColor),
+            BottomNavigationBarItem(
+                icon: Icon(Icons.account_circle),
+                title: Text('Contacts'),
+                backgroundColor: searchBgColor),
+            BottomNavigationBarItem(
+                icon: Icon(Icons.call),
+                title: Text('Calls'),
+                backgroundColor: searchBgColor),
+            BottomNavigationBarItem(
+                icon: Icon(Icons.settings),
+                title: Text('Settings'),
+                backgroundColor: searchBgColor),
           ]),
     );
   }
 
-  ListTile buildChatListTile(
-      String imagePath, String name, String message, String time, int count) {
+  ListTile buildChatListTile(String imagePath, String name, String message,
+      String time, int count, List singleChatData) {
     return ListTile(
+      onTap: () {
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+              builder: (context) => SingleChatPage(chatData: singleChatData)),
+        );
+      },
       contentPadding: const EdgeInsets.all(5),
       leading: Image.asset(imagePath, width: 100, height: 100),
       title: Text(name,
