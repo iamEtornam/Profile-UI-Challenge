@@ -16,7 +16,19 @@ This project is an implementation of a Design i saw on Twitter
 
 
 <img align="center" src="https://raw.githubusercontent.com/RegNex/Profile-UI-Challenge/master/screenshots/original.JPG" height="400"/>
-<img align="center" src="https://raw.githubusercontent.com/RegNex/Profile-UI-Challenge/master/screenshots/profile.png" height="400"/>
+
+<table style="width:100%" bgcolor="black">
+</br>
+  <tr>
+    <td><img align="center" src="https://raw.githubusercontent.com/RegNex/Profile-UI-Challenge/master/screenshots/profile.png" height="400"/></td>  
+  </tr>
+  <tr>
+   <td><p>Page One</p></td>
+  </tr>
+  </br>  
+
+</table>
+
 <img align="center" src="https://raw.githubusercontent.com/RegNex/Profile-UI-Challenge/master/screenshots/chat_original1.jpeg" height="400"/>
 <img align="center" src="https://raw.githubusercontent.com/RegNex/Profile-UI-Challenge/master/screenshots/chat_original2.jpeg" height="400"/>
 
