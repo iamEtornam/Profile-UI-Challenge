@@ -20,7 +20,7 @@ This project is an implementation of a Design i saw on Twitter
 <table style="width:100%" bgcolor="black">
 </br>
   <tr>
-    <td><img align="center" src="https://raw.githubusercontent.com/RegNex/Profile-UI-Challenge/master/screenshots/profile.png"
+    <td><img align="left" src="https://raw.githubusercontent.com/RegNex/Profile-UI-Challenge/master/screenshots/profile.png" height="400"
   </tr>
   <tr>
    <td><p>Page One</p></td>
