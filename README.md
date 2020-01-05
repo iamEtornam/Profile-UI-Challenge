@@ -119,9 +119,11 @@ What things you need to run the app
 
 ## Inspiration
 
-**Twitter**
+<p>second mockup designed by:</p>
 
-- [**Mockup designer**](https://www.twitter.com/)
+**A_Gal_That_Loves_To_Code**
+
+- [**Mockup designer**](https://www.twitter.com/atata_reheemat)
 
 ## License
 
