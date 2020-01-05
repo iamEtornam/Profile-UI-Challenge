@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:ui_challenge/chat_list_page.dart';
+import 'package:ui_challenge/profile_page.dart';
 
 import 'custom_colors.dart';
 
@@ -16,20 +18,31 @@ class MyApp extends StatelessWidget {
   }
 }
 
-
 class UiViewSelectPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(),
-
-    body: ListView(
-      children: <Widget>[
-        FlatButton(onPressed: (){}, child: Text('To Profile UI')),
-        FlatButton(onPressed: (){}, child: Text('To Chat UI'))
-
-      ],
-    ),
+      body: ListView(
+        children: <Widget>[
+          FlatButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => ProfilePage()),
+                );
+              },
+              child: Text('To Profile UI')),
+          FlatButton(
+              onPressed: () {
+                Navigator.pushReplacement(
+                  context,
+                  MaterialPageRoute(builder: (context) => ChatListPage()),
+                );
+              },
+              child: Text('To Chat UI'))
+        ],
+      ),
     );
   }
 }
