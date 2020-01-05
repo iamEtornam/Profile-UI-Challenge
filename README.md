@@ -20,6 +20,21 @@ This project is an implementation of a Design i saw on Twitter
 <img align="center" src="https://raw.githubusercontent.com/RegNex/Profile-UI-Challenge/master/screenshots/chat_original1.jpeg" height="400"/>
 <img align="center" src="https://raw.githubusercontent.com/RegNex/Profile-UI-Challenge/master/screenshots/chat_original2.jpeg" height="400"/>
 
+<table style="width:100%" bgcolor="black">
+</br>
+  <tr>
+    <td><img align="left" src="https://raw.githubusercontent.com/RegNex/Profile-UI-Challenge/master/screenshots/chat_1.png" width="200" height="400"/></td>
+    <td><img src="https://raw.githubusercontent.com/RegNex/Profile-UI-Challenge/master/screenshots/chat_2.png" width="200" height="400"/></td>
+   
+  </tr>
+  <tr>
+   <td><p>Page One</p></td>
+      <td><p>Page Two</p></td>
+  </tr>
+  </br>  
+
+</table>
+
 
 ## Getting Started
 
